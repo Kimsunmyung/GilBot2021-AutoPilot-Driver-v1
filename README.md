@@ -16,11 +16,17 @@ UART(Universal Asynchronous Receiver Transmitter)란?
 
 JETSON TX2 Serial 사용 준비
 @ sudo systemctl stop nvgetty
+
 @ sudo systemctl disable nvgetty
+
 @ sudo udevadm trigger
+
 @ sudo apt-get install python3-serial
 
 JETSON TX2 Serial 권한 설정
+
 @ ls -al /dev/ttyTHS* # 연결된 THS장치들을 나열
+
 @ id # 현재 로그온한 계정의 권한을 확인
+
 @ sudo usermod -a -G dialout nvidia # nvidia 계정에 dialout 권한을 부여
