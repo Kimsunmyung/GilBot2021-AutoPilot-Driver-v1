@@ -33,10 +33,19 @@ JETSON TX2 Serial 권한 설정
 
 
 
+
+
+
 i2c_transmit(ai_mode, drv_mode, drv_throttle, lamp_act, signal_lamp, horn_act)
+
 (0~3)	ai_mode: 0=자동화 사용 안함, 1=사용자 허가하에 사용, 2=강제사용, 3=없음
+
 (0~3)	drv_mode: 0=리니어브레이크, 1=전진모드, 2=후진모드, 3=급브레이크
+
 (0~127)	drv_throttle: drv_mode1과 2에만 반응하는 속도레벨
+
 (0~1)	lamp_act: 0=램프 끄기, 1=램프 켜기
+
 (0~3)	signal_lamp: 0=방향등X, 1=좌측방향등, 2=우측방향등, 3=비상등
+
 (0~1)	horn_act: 0=크락션끄기, 1=크락션켜기
